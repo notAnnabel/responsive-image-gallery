@@ -1,0 +1,123 @@
+* { 
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+    font-family: Caveat;
+
+}
+
+#title {
+    font-size: 15vw;
+    border: 40px;
+    border-radius: 40px;
+    border-color: rgb(240, 171, 132);
+    padding: 20px, 20px, 20px,20px;
+    border-style: inset;
+    background-color: rgb(240, 171, 132);
+    box-shadow: 2px, 2px, rgb(200, 133, 94), inset ;
+    color: bisque;
+}
+
+
+/* full width of screen */
+.full-width {
+    width: 100vw;
+}
+
+/* cover image proportions */
+#cover-img{
+    height: 200px;
+    object-position: 70%, 30%; /* 70 width and 30 height */
+}
+
+
+/* the div of the cover */
+#cover-div{
+    object-fit: cover;
+    height: 400px;
+    width: 70vw; 
+}
+
+/* size of each 'card' */
+.card {
+    width: 300px;
+}
+
+/* how the img interacts with card */
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-img:hover{
+    box-shadow: 10px 10px 1px rgb(75, 43, 43);
+
+}
+
+/* ------------------- columns ------------------- */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+
+/* ------------------- media tags / gallery items ----------------- */
+
+#gallery-div {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+    "item1 item2 item3 item4";
+}
+
+@media (max-width: 1200px){
+    #gallery-div {
+        grid-template-areas:
+        "item1 item2 item3 item4"
+        "item5 item6 item7 item8"
+        "item9 item10 item11 item12";
+    }
+}
+
+@media (max-width: 1000px){
+    #gallery-div {
+        grid-template-areas:
+        "item1 item2"
+        "item3 item4"
+        "item5 item6"
+        "item7 item8"
+        "item9 item10"
+        "item11 item12";
+    }
+}
+
+@media (max-width: 600px){
+    #gallery-div {
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8"
+        "item9"
+        "item10"
+        "item11"
+        "item12";
+    }
+}
+
+@media (max-width: 400px){
+    #cover-img {
+        display:none
+    }
+}
