@@ -7,7 +7,7 @@
 }
 
 #title {
-    font-size: 15vw;
+    font-size: 13vw;
     border: 40px;
     border-radius: 40px;
     border-color: rgb(240, 171, 132);
@@ -16,6 +16,7 @@
     background-color: rgb(240, 171, 132);
     box-shadow: 2px, 2px, rgb(200, 133, 94), inset ;
     color: bisque;
+    background-image: linear-gradient(25deg, rgb(245, 142, 83), rgb(243, 227, 155));;
 }
 
 
@@ -36,24 +37,31 @@
     object-fit: cover;
     height: 400px;
     width: 70vw; 
+    cursor: pointer;
+    transition: 0.3;
 }
+
+#cover-div:hover{
+    box-shadow:  10px 1px rgb(200, 133, 94);
+    cursor: pointer;
+}
+
 
 /* size of each 'card' */
 .card {
     width: 300px;
-}
-
-/* how the img interacts with card */
-.card img{
-    width: 100%;
     height: 300px;
-    object-fit: cover;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 25px;
 }
 
-.card-img:hover{
-    box-shadow: 10px 10px 1px rgb(75, 43, 43);
 
+.card:hover{
+    box-shadow: 10px 10px 1px rgb(200, 133, 94);
 }
+
+
 
 /* ------------------- columns ------------------- */
 
@@ -76,6 +84,7 @@
     grid-template-areas:
     "item1 item2 item3 item4";
 }
+
 
 @media (max-width: 1200px){
     #gallery-div {
@@ -121,3 +130,138 @@
         display:none
     }
 }
+
+/*-------------------------------------------------------------------------------------------------*/
+
+
+/* item 1 */
+#item1 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item1:active{
+    background-image: url(images/ginger-cat-growling.jpg);
+}
+
+
+/* item 2 */
+#item2 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item2:active{
+    background-image: url(images/ginger-cat-purring.jpg);
+}
+
+
+/*item 3 */
+#item3 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item3:active{
+    background-image: url(images/ginger-cat-purring.jpg);
+}
+
+
+/* item 4 */ 
+#item4 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+
+
+#item4:active{
+    background-image: url(images/ginger-cat-purring.jpg);
+}
+
+/* item 5 */
+#item5 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item5:active{
+    background-image: url(images/ginger-cat-growling.jpg);
+}
+
+/* item 6 */
+#item6 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item6:active{
+    background-image: url(images/ginger-cat-growling.jpg);
+}
+/* item 7 */
+#item7 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item7:active{
+    background-image: url(images/ginger-cat-purring.jpg);
+}
+/* item 8 */
+#item8 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item8:active{
+    background-image: url(images/ginger-cat-growling.jpg);
+}
+/* item 9 */
+#item9 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item9:active{
+    background-image: url(images/ginger-cat-purring.jpg);
+}
+/* item 10 */
+#item10 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item10:active{
+    background-image: url(images/ginger-cat-growling.jpg);
+}
+/* item 11 */
+#item11 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item11:active{
+    background-image: url(images/lying-garfield.png);
+}
+/* item 12 */
+#item12 {
+    background-image: url(images/cat-meowing.webp);
+    background-size: cover;
+    background-position: 30%, 70%;
+}
+
+#item12:active{
+    background-image: url(images/ginger-cat-purring.jpg);
+}
+
