@@ -42,15 +42,15 @@
     width: 100vw;
 }
 
-/* cover image proportions */
+/* cover image proportions 
 #cover-img{
     height: 200px;
-    object-position: 70%, 30%; /* 70 width and 30 height */
+    object-position: 70%, 30%; /* 70 width and 30 height 
 }
-
+*/
 
 /* the div of the cover */
-#cover-div{
+/* #cover-div{
     object-fit: cover;
     height: 400px;
     width: 70vw; 
@@ -61,7 +61,7 @@
 #cover-div:hover{
     box-shadow:  10px 1px rgb(200, 133, 94);
     cursor: pointer;
-}
+} */
 
 
 /* size of each 'card' */
